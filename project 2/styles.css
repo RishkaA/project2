@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%)
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 800px;
+  margin: auto;
+  margin-top: 15%;
+}
+
+.box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 50%;
+  height: 300px;
+  padding: 50px;
+  background-color: hsl(244, 38%, 16%);
+
+}
+
+.box2 {
+  flex: 50%;
+  height: 300px;
+  background: hsl(277, 64%, 61%);
+}
+
+img {
+    width: 400px;
+    max-height: 100%;
+    object-fit: fill;
+    opacity: 0.5;
+}
+
+.box1 h1 {
+  flex: 100%;
+  color: hsl(0, 0%, 100%);
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.bottom h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1em;
+  font-family: Inter;
+  margin-bottom: 0;
+  margin-top: 25px;
+}
+
+/* main paragraph*/
+.box1 p {
+  flex: 100%;
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: Lexend Deca;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+h1 #insights {
+  color: hsl(277, 64%, 61%);
+}
+
+  @media screen and (max-width: 500px) {
+
+    .mainBox {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: auto;
+      height: 700px;
+      margin: auto;
+      width: 80%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+    .box2 {
+      flex: 15%;
+      width: inherit;
+      height: inherit;
+    }
+
+    .box1 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      text-align: center;
+      flex: 85%;
+      width: inherit;
+      padding: 30px;
+    }
+
+    .box1 h1 {
+      flex: 25%;
+    }
+
+    .box1 p {
+      flex: 25%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        opacity: 0.5;
+    }
+  }
